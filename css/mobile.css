@@ -1,0 +1,33 @@
+/* On screens that are 480px or less, set mobile style */
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0px;
+    }
+    .banner-image {
+        height: 200px;
+    }
+    #nav {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 10px;
+    }
+    .nav-item,
+    .nav-item:last-child {
+        border: none;
+        padding: 10px;
+    }
+    #personal-info,
+    .project-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #other-info {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .border-item {
+        grid-column: 1 / -1;
+    }
+}

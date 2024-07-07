@@ -1,0 +1,65 @@
+    /* On screens that are 768px or less, set tablet style */
+    
+    @media screen and (max-width: 768px) {
+         :root {
+            --var-padding: 60px;
+        }
+        body {
+            padding: 20px;
+        }
+        .banner-image {
+            height: 240px;
+        }
+        .nav-img,
+        .nav-center {
+            display: none;
+        }
+        .nav-item {
+            padding: 15px;
+        }
+        .personal-item {
+            padding: 20px;
+        }
+        .personal-item h4 {
+            padding-block: 15px;
+        }
+        #other-info,
+        .project-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-block: 30px;
+            gap: 20px;
+        }
+        .other-detail ul {
+            padding: 10px;
+        }
+        #certificate-award {
+            padding-block: 30px;
+        }
+        .certificate-award {
+            gap: 20px 10px;
+        }
+        .certificate-award-item {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .project-describe-detail {
+            flex-direction: column;
+        }
+        .project-item h5 {
+            padding: 10px;
+        }
+        .project-describe {
+            padding-inline: 10px;
+            gap: 5px;
+        }
+        .project-item-detail {
+            display: grid;
+            grid-template-columns: 45px 1fr;
+            padding-inline: 10px;
+        }
+        #contact {
+            padding-block: 20px;
+        }
+    }
